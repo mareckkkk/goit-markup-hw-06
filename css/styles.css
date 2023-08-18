@@ -496,6 +496,7 @@ a {
 
 .footer-container-2 {
 	align-items: baseline;
+	margin-right: 120px;
 }
 
 .social-media-footer {
@@ -593,11 +594,8 @@ svg {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
+	padding: 72px 24px 24px;
 }
-
-  
-
 
 .backdrop {
 	width: 100%;
@@ -620,10 +618,18 @@ svg {
 	outline: 0;
 	border-radius: 50%;
 	position: absolute;
-	right: 0;
-	margin-top: 24px;
-	margin-inline: 24px;
+	right: 24px;
+	top: 24px;
 	background-color: #e7e9fc;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal > .close-btn:hover,
+.modal > .close-btn:active,
+.modal > .close-btn:focus {
+	background-color: #404bbf;
+	color: #ffffff;
 }
 
 .nav-button .link {
@@ -656,7 +662,6 @@ svg {
 .card-image-wrapper {
 	position: relative;
 	overflow: hidden;
-	
 }
 
 .card-image-description {
@@ -694,3 +699,224 @@ footer .social-links .icon-all {
 .social-links .icon-all {
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+
+.modal-text {
+	text-align: center;
+	color: #2e2f42;
+	margin-bottom: 16px;
+	font-family: Roboto;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.32px;
+}
+
+.modal form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	display: flex;
+	flex-direction: column;
+	color: #8e8f99;
+	font-family: Roboto;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.16;
+	letter-spacing: 0.48px;
+}
+
+
+
+.modal textarea {
+	color: #2e2f42;
+	width: 360px;
+	height: 120px;
+	margin-top: 4px;
+	padding: 8px 16px;
+	border-radius: 4px;
+	background-color: transparent;
+	border: 1px solid #2e2f4266;
+	outline: 0;
+	resize: none;
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal textarea:focus-within{
+	border-color: blue;
+}
+
+.modal .checkbox-form {
+	margin-bottom: 24px;
+	display: flex;
+	flex-direction: row;
+	margin-top: 16px;
+	line-height: 1.16;
+	gap: 8px;
+}
+
+.modal .checkbox-wrapper {
+	position: relative;
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	border-radius: 4px;
+}
+
+.modal .check-box {
+	display: flex;
+}
+
+.privacy-policy {
+	text-decoration: underline;
+	appearance: none;
+}
+
+.form-button {
+	color: #fff;
+	width: 169px;
+	height: 56px;
+	border: none;
+	padding: 16px 32px;
+	border-radius: 4px;
+	background: #4d5ae5;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+	margin: 0 auto;
+	display: block;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-button:hover,
+.form-button:focus {
+	background-color: #404bbf;
+}
+
+.input-form-policy {
+	width: 16px;
+	height: 16px;
+	flex-shrink: 0;
+}
+
+input[type="checkbox"]{
+
+	border: 1px solid green;
+}
+
+input:checked + .input-form-policy{
+fill:  #404BBF;
+stroke-width: 1px;
+stroke: #404BBF;
+}
+
+.footer-container-3 .text-m-500 {
+	margin-bottom: 16px;
+	color: white;
+}
+
+.footer-container-3 .newsletter-container {
+	display: flex;
+	gap: 24px;
+}
+
+.email-input {
+	height: 40px;
+	width: 264px;
+	padding: 8px 16px;
+	background-color: transparent;
+	border: 1px solid #fff;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	outline: 0;
+	margin-bottom: -8px;
+
+}
+.email-input[placeholder] {
+	color: #fff;
+	font-family: Roboto, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px; /* 200% */
+	letter-spacing: 0.48px;
+		border-radius: 4px;	
+	border: 1px solid ;
+}
+.email-input::placeholder {
+	color: #fff;
+}
+
+.submit-button {
+	display: flex;
+	gap: 16px;
+	color: #fff;
+	border: none;
+	padding: 8px 24px;
+	border-radius: 4px;
+	background: #4d5ae5;
+	margin: 0 auto;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-button:hover {
+	background-color: #404bbf;
+}
+
+.footer-container-3 input{
+	background-image:url(./images/icons.svg#icon-linkedin-1);
+}
+
+.text-btn {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+}
+
+input:not([type="chechbox"]){
+	border:none;
+}
+
+input:not([type="chechbox"]):focus{
+	outline: none;
+}
+
+.input-wrapper{
+	display: flex;
+	margin-top: 4px;
+	margin-bottom: 8px;
+	padding: 8px 16px;
+	font-family: inherit;
+	border-radius: 4px;
+	border: 1px solid rgba(46, 47, 66, 0.4);
+	height: 40px;
+	flex-shrink: 0;
+}
+
+.input-wrapper > input{
+	flex-grow: 1;
+	padding: 5px;
+	background-color: #FCFCFC;
+	
+}
+
+.input-wrapper:focus-within{	
+	border-radius: 4px;
+border: 1px solid #4D5AE5
+}
+
+.input-wrapper:focus-within .icon{
+	fill: #4D5AE5;
+
+}
+
+.input-wrapper > .icon{
+fill: black;
+}
+
+
