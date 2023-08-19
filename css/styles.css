@@ -802,10 +802,6 @@ label {
 	flex-shrink: 0;
 }
 
-input[type="checkbox"]{
-
-	border: 1px solid green;
-}
 
 input:checked + .input-form-policy{
 fill:  #404BBF;
