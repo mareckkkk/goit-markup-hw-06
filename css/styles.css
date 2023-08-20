@@ -700,8 +700,6 @@ footer .social-links .icon-all {
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
 .modal-text {
 	text-align: center;
 	color: #2e2f42;
@@ -731,8 +729,6 @@ label {
 	letter-spacing: 0.48px;
 }
 
-
-
 .modal textarea {
 	color: #2e2f42;
 	width: 360px;
@@ -747,7 +743,7 @@ label {
 	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal textarea:focus-within{
+.modal textarea:focus-within {
 	border-color: blue;
 }
 
@@ -802,11 +798,10 @@ label {
 	flex-shrink: 0;
 }
 
-
-input:checked + .input-form-policy{
-fill:  #404BBF;
-stroke-width: 1px;
-stroke: #404BBF;
+input:checked + .input-form-policy {
+	fill: #404bbf;
+	stroke-width: 1px;
+	stroke: #404bbf;
 }
 
 .footer-container-3 .text-m-500 {
@@ -829,7 +824,6 @@ stroke: #404BBF;
 	border-radius: 4px;
 	outline: 0;
 	margin-bottom: -8px;
-
 }
 .email-input[placeholder] {
 	color: #fff;
@@ -839,8 +833,8 @@ stroke: #404BBF;
 	font-weight: 400;
 	line-height: 24px; /* 200% */
 	letter-spacing: 0.48px;
-		border-radius: 4px;	
-	border: 1px solid ;
+	border-radius: 4px;
+	border: 1px solid;
 }
 .email-input::placeholder {
 	color: #fff;
@@ -862,27 +856,27 @@ stroke: #404BBF;
 	background-color: #404bbf;
 }
 
-.footer-container-3 input{
-	background-image:url(./images/icons.svg#icon-linkedin-1);
+.footer-container-3 input {
+	background-image: url(./images/icons.svg#icon-linkedin-1);
 }
 
 .text-btn {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.64px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.64px;
 }
 
-input:not([type="chechbox"]){
-	border:none;
+input:not([type="chechbox"]) {
+	border: none;
 }
 
-input:not([type="chechbox"]):focus{
+input:not([type="chechbox"]):focus {
 	outline: none;
 }
 
-.input-wrapper{
+.input-wrapper {
 	display: flex;
 	margin-top: 4px;
 	margin-bottom: 8px;
@@ -894,25 +888,21 @@ input:not([type="chechbox"]):focus{
 	flex-shrink: 0;
 }
 
-.input-wrapper > input{
+.input-wrapper > input {
 	flex-grow: 1;
 	padding: 5px;
-	background-color: #FCFCFC;
-	
+	background-color: #fcfcfc;
 }
 
-.input-wrapper:focus-within{	
+.input-wrapper:focus-within {
 	border-radius: 4px;
-border: 1px solid #4D5AE5
+	border: 1px solid #4d5ae5;
 }
 
-.input-wrapper:focus-within .icon{
-	fill: #4D5AE5;
-
+.input-wrapper:focus-within .icon {
+	fill: #4d5ae5;
 }
 
-.input-wrapper > .icon{
-fill: black;
+.input-wrapper > .icon {
+	fill: black;
 }
-
-
